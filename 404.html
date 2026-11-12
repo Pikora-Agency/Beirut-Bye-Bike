@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>ByeBike Cancer | Page not found</title>
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#000;color:#fff;font-family:Montserrat,Arial,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+  h1{font-size:72px;margin:0 0 8px;color:#1fe0bd}
+  p{font-size:18px;margin:0 0 28px;opacity:.85}
+  a{display:inline-block;padding:14px 28px;border:2px solid #1fe0bd;border-radius:40px;color:#1fe0bd;text-decoration:none;font-weight:600}
+  a:hover{background:#1fe0bd;color:#000}
+</style>
+</head>
+<body>
+<main>
+  <h1>404</h1>
+  <p>This page could not be found.</p>
+  <a id="home" href="/">Back to home</a>
+</main>
+<script>
+  // On a github.io project site the home page lives under /<repo>/, not /.
+  (function () {
+    if (/\.github\.io$/.test(location.hostname)) {
+      var first = location.pathname.split('/')[1];
+      if (first) document.getElementById('home').href = '/' + first + '/';
+    }
+  })();
+</script>
+</body>
+</html>
