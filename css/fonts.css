@@ -1,0 +1,19 @@
+/* Heading font.
+   The original design uses Druk Text Wide ('DrukTextWideTT'), which Tilda only serves to its own projects.
+   Archivo Expanded (SIL Open Font License) is the fallback that follows it in every font stack.
+   To use licensed Druk files instead: add them to /fonts and declare them here as
+   @font-face { font-family: 'DrukTextWideTT'; ... } - they take priority automatically. */
+@font-face {
+  font-family: 'Archivo Expanded';
+  src: url('../fonts/archivo-expanded-700.woff2') format('woff2');
+  font-weight: 100 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivo Expanded';
+  src: url('../fonts/archivo-expanded-800.woff2') format('woff2');
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
